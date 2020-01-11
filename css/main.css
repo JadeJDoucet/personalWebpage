@@ -178,6 +178,12 @@ main {
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
