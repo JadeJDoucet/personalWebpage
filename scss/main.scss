@@ -131,6 +131,10 @@ main {
 }
 
 // Contact Page
+#contact-wrap {
+  background: url(../img/background-dark-city.gif);
+  background-size: cover;
+}
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -143,6 +147,7 @@ main {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
+    background: $primary-color;
     @include easeOut;
 
     &:hover {
@@ -185,7 +190,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, $amount: 10);
+  // background: darken($primary-color, $amount: 10);
   color: set-text-color($primary-color);
   height: 60px;
 }
