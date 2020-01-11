@@ -110,6 +110,16 @@ main {
   }
 }
 
+// Work/Projects
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  img {
+    width: 100%;
+  }
+}
+
+
 #main-footer {
   text-align: center;
   padding: 1rem;
