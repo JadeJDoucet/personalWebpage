@@ -22,7 +22,7 @@
     .btn-line {
       // Line 1 - Rotate
       &:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(10px, 6px);
         
       }
 
@@ -33,7 +33,7 @@
 
       // Line 3 - Rotate
       &:nth-child(3) {
-        transform: rotate(135deg) translate(-7px, 5px);
+        transform: rotate(135deg) translate(-5px, 1px);
       }
     }
   }
