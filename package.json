@@ -4,11 +4,14 @@
   "description": "personal portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Jade Doucet",
   "license": "MIT",
+  "homepage": "https://jadejdoucet.github.io/personalWebpage",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.0"
   }
 }
