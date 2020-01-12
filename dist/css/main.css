@@ -286,4 +286,6 @@ main {
   main .lg-heading {
     font-size: 4rem; }
   main .sm-heading {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .boxes .text-secondary {
+    font-size: 4rem; } }
