@@ -288,4 +288,6 @@ main {
   main .sm-heading {
     font-size: 1rem; }
   .boxes .text-secondary {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  .bio p {
+    font-size: 1rem; } }
