@@ -71,8 +71,19 @@
   main#home h1 {
     margin-top: 10vh;
   }
-  
+
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  main {
+
+    .lg-heading {
+      font-size: 4rem;
+    }
+
+    .sm-heading {
+      font-size: 1rem;
+    }
   }
 }
