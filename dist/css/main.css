@@ -294,7 +294,13 @@ main {
   main .sm-heading {
     font-size: 1rem; }
   .boxes div {
-    padding: 1rem 1.5rem; }
+    padding: 0.1rem 1.5rem;
+    max-height: 20vh;
+    max-width: 25rem;
+    align-items: center;
+    justify-content: center; }
+    .boxes div:hover {
+      padding: 0.1rem 0.7rem; }
   .boxes .text-secondary {
     font-size: 4rem; }
   .bio p {
