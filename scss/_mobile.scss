@@ -94,9 +94,14 @@
       max-width: 25rem;
       align-items: center;
       justify-content: center;
-       &:hover {
-         padding: 0.1rem 0.7rem;
-       }
+      font-size: 24px;
+        .text-secondary {
+          font-size: 30px;
+        }
+        
+        &:hover {
+          padding: 0.1rem 0.7rem;
+        }
     }
     .text-secondary {
       font-size: 4rem;
