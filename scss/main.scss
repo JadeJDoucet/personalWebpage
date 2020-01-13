@@ -112,6 +112,11 @@ main {
 }
 
 // Work/Projects
+#bg-work {
+  // background: url(../img/background-ship.gif);
+  // background-size: cover;
+  // background-position: center;
+}
 .projects {
   display: grid;
   grid-gap: 0.2rem;
@@ -128,7 +133,7 @@ main {
     max-width: 100%;
     max-height: 500px;
     // width: 100%; 
-    // border: 3px #fff solid;
+    border: 3px #fff solid;
 
     &:hover {
       opacity: 0.5;
@@ -139,9 +144,10 @@ main {
 }
 
 // Contact Page
-#contact-wrap {
-  background: url(../img/background-dark-city.gif);
-  background-size: cover;
+#bg-contact {
+  background: url(../img/background-moving-ship.gif);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .boxes {
   display: flex;
