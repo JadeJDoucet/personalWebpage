@@ -179,6 +179,10 @@ main {
     padding: 0.5rem;
     border-bottom: #0099ff 5px solid; }
 
+#bg-work {
+  background: url(../img/background-fire.gif);
+  background-size: cover; }
+
 .projects {
   display: grid;
   grid-gap: 0.2rem;
