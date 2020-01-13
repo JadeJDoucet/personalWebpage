@@ -193,7 +193,7 @@ main {
       transition: all 0.5s ease-out; }
 
 #bg-contact {
-  background: url(../img/background-moving-ship.gif);
+  background: url(../img/background-ship.gif);
   background-size: 100% 100%;
   background-repeat: no-repeat; }
 
@@ -286,6 +286,8 @@ main {
     font-size: 4rem; }
   main .sm-heading {
     font-size: 1rem; }
+  .boxes div {
+    padding: 1rem 1.5rem; }
   .boxes .text-secondary {
     font-size: 4rem; }
   .bio p {
