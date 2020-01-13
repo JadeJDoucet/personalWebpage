@@ -283,6 +283,8 @@ main {
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, fr); }
+  .contact .lg-heading {
+    font-size: 4rem; }
   .boxes div {
     padding: 0.1rem 0.5rem;
     max-height: 20vh;
