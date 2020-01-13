@@ -179,10 +179,17 @@ main {
     padding: 0.5rem;
     border-bottom: #0099ff 5px solid; }
 
+#bg-work {
+  background: url(../img/background-fire.gif);
+  background-size: cover; }
+
 .projects {
   display: grid;
   grid-gap: 0.2rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center; }
+  .projects .item.phone {
+    max-width: 50%; }
   .projects img {
     max-width: 100%;
     max-height: 500px;
@@ -193,8 +200,9 @@ main {
       transition: all 0.5s ease-out; }
 
 #bg-contact {
-  background: url(../img/background-dark-city.gif);
-  background-size: cover; }
+  background: url(../img/background-ship.gif);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
 
 .boxes {
   display: flex;
@@ -285,6 +293,8 @@ main {
     font-size: 4rem; }
   main .sm-heading {
     font-size: 1rem; }
+  .boxes div {
+    padding: 1rem 1.5rem; }
   .boxes .text-secondary {
     font-size: 4rem; }
   .bio p {
