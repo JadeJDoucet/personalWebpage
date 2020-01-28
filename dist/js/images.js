@@ -83,13 +83,15 @@ function updateReadr() {
 };
 
 /* ---------- Add zoom functionality ---------- */
+
+// Add event handler to buttons
 for (let i = 0; i < zoomBtns.length; i++) {
   let zoomBtn = zoomBtns[i];
   zoomBtn.addEventListener('click', handleZoom);
 }
 
+// Remove zooms function
 function handleZoom(event) {
-  // Remove zooms
   const removeZooms = () => {
     for (let i = 0; i < zoomImgs.length; i++) {
       let zoomImg = zoomImgs[i];
