@@ -187,16 +187,17 @@ main {
   display: grid;
   grid-gap: 0.2rem;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center; }
-  .projects .item.phone {
-    max-width: 50%; }
+  align-items: flex-end; }
   .projects img {
-    max-width: 100%;
-    max-height: 500px;
+    overflow: hidden;
+    max-width: 100vh;
+    max-height: 65vh;
     border: 3px #fff solid; }
     .projects img:hover {
-      opacity: 0.5;
+      opacity: 0.99;
+      margin-right: 5%;
       border-color: #0099ff;
+      transform: scale(1.2);
       transition: all 0.5s ease-out; }
 
 #bg-contact {
