@@ -195,13 +195,24 @@ main {
     max-width: 100vh;
     max-height: 65vh;
     border: 3px #fff solid; }
-    .projects img:hover {
+    .projects img:hover.sm {
       opacity: 0.99;
       border-color: #0099ff;
+      transform: translateY(-6vh) translateX(3rem) scale(1.2);
       transition: all 0.5s ease-out; }
-    .projects img.zoom {
+    .projects img:hover.lg {
+      opacity: 0.99;
       border-color: #0099ff;
-      transform: scale(1.2);
+      transform: translateY(-6vh) translateX(-3rem) scale(1.2);
+      transition: all 0.5s ease-out; }
+    .projects img.zoom.sm {
+      border-color: #0099ff;
+      transform: translateY(-6vh) translateX(3rem) scale(1.2);
+      transition: all 0.5s ease-out; }
+    .projects img.zoom.lg {
+      opacity: 0.99;
+      border-color: #0099ff;
+      transform: translateY(-6vh) translateX(-3rem) scale(1.2);
       transition: all 0.5s ease-out; }
 
 #bg-contact {

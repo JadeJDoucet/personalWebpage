@@ -131,15 +131,31 @@ main {
     border: 3px #fff solid;
 
     &:hover {
-      opacity: 0.99;
-      border-color: $secondary-color;
-      // transform: scale(1.2);
-      @include easeOut;
+      &.sm {
+        opacity: 0.99;
+        border-color: $secondary-color;
+        transform: translateY(-6vh) translateX(3rem) scale(1.2);
+        @include easeOut;
+      }
+      &.lg {
+        opacity: 0.99;
+        border-color: $secondary-color;
+        transform: translateY(-6vh) translateX(-3rem) scale(1.2);
+        @include easeOut;
+      }
     }
     &.zoom {
-      border-color: $secondary-color;
-      transform: scale(1.2);
-      @include easeOut;
+      &.sm {
+        border-color: $secondary-color;
+        transform: translateY(-6vh) translateX(3rem) scale(1.2); // slide to right and scale
+        @include easeOut;
+      }
+      &.lg {
+        opacity: 0.99;
+        border-color: $secondary-color;
+        transform: translateY(-6vh) translateX(-3rem) scale(1.2); // slide to left and scale
+        @include easeOut;
+      }
     }
   }
 }
