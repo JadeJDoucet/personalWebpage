@@ -121,23 +121,30 @@ main {
   grid-gap: 0.2rem;
   grid-template-columns: repeat(3, 1fr);
   align-items: flex-end;
-  justify-items: center;
+  justify-items: stretch;
   padding-right: 1.5%;
   padding-left: 1.5%;
   
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   img {
     overflow: hidden;
     max-width: 100vh;
     max-height: 65vh;
-    border: 3px #fff solid;
-
+    // border: 3px #fff solid;
     &:hover {
       &.sm {
+        border: 3px #fff solid;
         border-color: $secondary-color;
-        transform: translateY(-6vh) translateX(-1rem) scale(1.2);
+        transform: translateY(-6vh) scale(1.2);
         @include easeOut;
       }
       &.lg {
+        border: 3px #fff solid;
         border-color: $secondary-color;
         transform: translateY(-6vh) translateX(-3rem) scale(1.2);
         @include easeOut;
@@ -146,7 +153,7 @@ main {
     &.zoom {
       &.sm {
         border-color: $secondary-color;
-        transform: translateY(-6vh) translateX(-1rem) scale(1.2); // slide to right and scale
+        transform: translateY(-6vh) scale(1.2); // slide to right and scale
         @include easeOut;
       }
       &.lg {

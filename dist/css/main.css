@@ -188,25 +188,30 @@ main {
   grid-gap: 0.2rem;
   grid-template-columns: repeat(3, 1fr);
   align-items: flex-end;
-  justify-items: center;
+  justify-items: stretch;
   padding-right: 1.5%;
   padding-left: 1.5%; }
+  .projects a {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .projects img {
     overflow: hidden;
     max-width: 100vh;
-    max-height: 65vh;
-    border: 3px #fff solid; }
+    max-height: 65vh; }
     .projects img:hover.sm {
+      border: 3px #fff solid;
       border-color: #0099ff;
-      transform: translateY(-6vh) translateX(-1rem) scale(1.2);
+      transform: translateY(-6vh) scale(1.2);
       transition: all 0.5s ease-out; }
     .projects img:hover.lg {
+      border: 3px #fff solid;
       border-color: #0099ff;
       transform: translateY(-6vh) translateX(-3rem) scale(1.2);
       transition: all 0.5s ease-out; }
     .projects img.zoom.sm {
       border-color: #0099ff;
-      transform: translateY(-6vh) translateX(-1rem) scale(1.2);
+      transform: translateY(-6vh) scale(1.2);
       transition: all 0.5s ease-out; }
     .projects img.zoom.lg {
       border-color: #0099ff;
