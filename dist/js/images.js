@@ -1,8 +1,9 @@
 // This will handle image src changing for each work item
 // Grab DOM items
-const Scannar = document.getElementById('scannar'); // Grab scannar image
+const Scannar = document.getElementById('scannar'); // Grab Scannar image
 const Adopt = document.getElementById('adopt'); // Grab Adopt A Pothole image
-const Readr = document.getElementById('readr');
+const Readr = document.getElementById('readr'); // Grab Readr image
+const zoomBtns = document.getElementsByClassName('btn-light'); // Select Zoom buttons
 
 // Update our current image index
 const updateImageCounter = (index, array) => {
@@ -78,4 +79,30 @@ let rIndex = 1;
 function updateReadr() {
   Readr.setAttribute("src", readrImages[rIndex]); // Change curr image
   rIndex = updateImageCounter(rIndex, readrImages);
+};
+
+/* ---------- Add zoom functionality ---------- */
+for (let i = 0; i < zoomBtns.length; i++) {
+  let zoomBtn = zoomBtns[i];
+  zoomBtn.addEventListener('click', handleZoom);
+}
+
+function handleZoom(event) {
+  // Remove zooms
+  const removeZooms = () => {
+    for (let i = 0; i < zoomBtns.length; i++) {
+      let zoomBtn = zoomBtns[i];
+      zoomBtn.classList.remove('zoom');
+    }
+  };
+
+  // Add/Remove zoom class to current target
+  const btn = event.target;
+
+  if (btn.classList.value.includes('zoom')) { // If target is clicked twice, zoom is removed
+    btn.classList.remove('zoom');
+  } else {
+    removeZooms(); // All zooms are removed
+    btn.classList.add('zoom'); // Current target is zoomed
+  }
 };

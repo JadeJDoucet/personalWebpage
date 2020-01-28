@@ -133,6 +133,11 @@ main {
     &:hover {
       opacity: 0.99;
       border-color: $secondary-color;
+      // transform: scale(1.2);
+      @include easeOut;
+    }
+    &.zoom {
+      border-color: $secondary-color;
       transform: scale(1.2);
       @include easeOut;
     }
