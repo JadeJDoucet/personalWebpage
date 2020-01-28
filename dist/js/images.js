@@ -4,6 +4,7 @@ const Scannar = document.getElementById('scannar'); // Grab Scannar image
 const Adopt = document.getElementById('adopt'); // Grab Adopt A Pothole image
 const Readr = document.getElementById('readr'); // Grab Readr image
 const zoomBtns = document.getElementsByClassName('btn-light'); // Select Zoom buttons
+const zoomImgs = document.getElementsByTagName('img'); // Select all images
 
 // Update our current image index
 const updateImageCounter = (index, array) => {
@@ -90,19 +91,20 @@ for (let i = 0; i < zoomBtns.length; i++) {
 function handleZoom(event) {
   // Remove zooms
   const removeZooms = () => {
-    for (let i = 0; i < zoomBtns.length; i++) {
-      let zoomBtn = zoomBtns[i];
-      zoomBtn.classList.remove('zoom');
+    for (let i = 0; i < zoomImgs.length; i++) {
+      let zoomImg = zoomImgs[i];
+      zoomImg.classList.remove('zoom');
     }
   };
 
   // Add/Remove zoom class to current target
   const btn = event.target;
-
-  if (btn.classList.value.includes('zoom')) { // If target is clicked twice, zoom is removed
-    btn.classList.remove('zoom');
+  const img = btn.parentElement.getElementsByTagName('img');
+  console.log(img[0]);
+  if (img[0].classList.value.includes('zoom')) { // If target is clicked twice, zoom is removed
+    img[0].classList.remove('zoom');
   } else {
     removeZooms(); // All zooms are removed
-    btn.classList.add('zoom'); // Current target is zoomed
+    img[0].classList.add('zoom'); // Current target is zoomed
   }
 };
