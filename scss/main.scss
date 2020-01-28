@@ -121,6 +121,8 @@ main {
   grid-gap: 0.2rem;
   grid-template-columns: repeat(3, 1fr);
   align-items: flex-end;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
   
   img {
     overflow: hidden;
@@ -130,7 +132,6 @@ main {
 
     &:hover {
       opacity: 0.99;
-      margin-right: 5%;
       border-color: $secondary-color;
       transform: scale(1.2);
       @include easeOut;
