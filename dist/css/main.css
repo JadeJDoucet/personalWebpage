@@ -210,10 +210,12 @@ main {
       transform: translateY(-6vh) translateX(-3rem) scale(1.2);
       transition: all 0.5s ease-out; }
     .projects img.zoom.sm {
+      border: 3px #fff solid;
       border-color: #0099ff;
       transform: translateY(-6vh) scale(1.2);
       transition: all 0.5s ease-out; }
     .projects img.zoom.lg {
+      border: 3px #fff solid;
       border-color: #0099ff;
       transform: translateY(-6vh) translateX(-3rem) scale(1.2);
       transition: all 0.5s ease-out; }

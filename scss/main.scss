@@ -135,7 +135,6 @@ main {
     overflow: hidden;
     max-width: 100vh;
     max-height: 65vh;
-    // border: 3px #fff solid;
     &:hover {
       &.sm {
         border: 3px #fff solid;
@@ -150,13 +149,16 @@ main {
         @include easeOut;
       }
     }
+    
     &.zoom {
       &.sm {
+        border: 3px #fff solid;
         border-color: $secondary-color;
         transform: translateY(-6vh) scale(1.2); // slide to right and scale
         @include easeOut;
       }
       &.lg {
+        border: 3px #fff solid;
         border-color: $secondary-color;
         transform: translateY(-6vh) translateX(-3rem) scale(1.2); // slide to left and scale
         @include easeOut;
