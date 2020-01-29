@@ -210,10 +210,12 @@ main {
       transform: translateY(-6vh) translateX(-3rem) scale(1.2);
       transition: all 0.5s ease-out; }
     .projects img.zoom.sm {
+      border: 3px #fff solid;
       border-color: #0099ff;
       transform: translateY(-6vh) scale(1.2);
       transition: all 0.5s ease-out; }
     .projects img.zoom.lg {
+      border: 3px #fff solid;
       border-color: #0099ff;
       transform: translateY(-6vh) translateX(-3rem) scale(1.2);
       transition: all 0.5s ease-out; }
@@ -319,8 +321,25 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  #bg-work {
+    background: url(../img/background-shooting-star.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
   .projects {
-    grid-template-columns: 1fr; }
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    max-width: 100%;
+    max-height: 100%; }
+    .projects div {
+      margin-bottom: 3%; }
+    .projects img {
+      max-width: 100%;
+      border: 3px #fff solid; }
   main .lg-heading {
     font-size: 4rem; }
   main .sm-heading {
