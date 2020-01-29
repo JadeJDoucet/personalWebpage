@@ -3,6 +3,61 @@
   .projects {
     grid-template-columns: repeat(3, fr);
   }
+  // ----- Work ----- //
+  #bg-work {
+  background: url(../img/background-fire.gif);
+  background-size: cover;
+}
+.projects {
+  display: grid;
+  grid-gap: 0.2rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-end;
+  justify-items: stretch;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    overflow: hidden;
+    max-width: 100vh;
+    max-height: 65vh;
+    &:hover {
+      &.sm {
+        border: 3px #fff solid;
+        border-color: $secondary-color;
+        transform: translateY(-6vh) scale(1.2);
+        @include easeOut;
+      }
+      &.lg {
+        border: 3px #fff solid;
+        border-color: $secondary-color;
+        transform: translateY(-6vh) translateX(-3rem) scale(1.2);
+        @include easeOut;
+      }
+    }
+    
+    &.zoom {
+      &.sm {
+        border: 3px #fff solid;
+        border-color: $secondary-color;
+        transform: translateY(-6vh) scale(1.2); // slide to right and scale
+        @include easeOut;
+      }
+      &.lg {
+        border: 3px #fff solid;
+        border-color: $secondary-color;
+        transform: translateY(-6vh) translateX(-3rem) scale(1.2); // slide to left and scale
+        @include easeOut;
+      }
+    }
+  }
+}
 }
 
 // Desktops & Laptops
@@ -10,6 +65,61 @@
   .projects {
     grid-template-columns: repeat(3, fr);
   }
+  // ---- work ----- //
+  #bg-work {
+  background: url(../img/background-fire.gif);
+  background-size: cover;
+}
+.projects {
+  display: grid;
+  grid-gap: 0.2rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-end;
+  justify-items: stretch;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    overflow: hidden;
+    max-width: 100vh;
+    max-height: 65vh;
+    &:hover {
+      &.sm {
+        border: 3px #fff solid;
+        border-color: $secondary-color;
+        transform: translateY(-6vh) scale(1.2);
+        @include easeOut;
+      }
+      &.lg {
+        border: 3px #fff solid;
+        border-color: $secondary-color;
+        transform: translateY(-6vh) translateX(-3rem) scale(1.2);
+        @include easeOut;
+      }
+    }
+    
+    &.zoom {
+      &.sm {
+        border: 3px #fff solid;
+        border-color: $secondary-color;
+        transform: translateY(-6vh) scale(1.2); // slide to right and scale
+        @include easeOut;
+      }
+      &.lg {
+        border: 3px #fff solid;
+        border-color: $secondary-color;
+        transform: translateY(-6vh) translateX(-3rem) scale(1.2); // slide to left and scale
+        @include easeOut;
+      }
+    }
+  }
+}
 }
 
 // Tablets & Small Laptops
@@ -93,34 +203,6 @@
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
-  }
-
-  // Projects / Work
-  #bg-work {
-  background: url(../img/background-shooting-star.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-  .projects {
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    max-width: 100%;
-    max-height: 100%;
-
-    div {
-      margin-bottom: 3%;
-    }
-
-    img {
-      max-width: 100%;
-      border: 3px #fff solid;
-    }
   }
 
   main {
