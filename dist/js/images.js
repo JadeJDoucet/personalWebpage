@@ -102,7 +102,6 @@ function handleZoom(event) {
   // Add/Remove zoom class to current target
   const btn = event.target;
   const img = btn.parentElement.getElementsByTagName('img');
-  console.log(img[0]);
   if (img[0].classList.value.includes('zoom')) { // If target is clicked twice, zoom is removed
     img[0].classList.remove('zoom');
   } else {
