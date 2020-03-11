@@ -188,12 +188,14 @@ main {
   @extend .btn;
   background: darken($primary-color, $amount: 50);
   color: #fff;
+  border-radius: 5px;
 }
 
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, $amount: 50);
   color: #333;
+  border-radius: 5px;
 }
 
 
@@ -203,6 +205,11 @@ main {
   // background: darken($primary-color, $amount: 10);
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+#adopt {
+  width: 300px;
+  height: 750px;
 }
 
 @import 'mobile';

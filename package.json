@@ -12,6 +12,7 @@
   "homepage": "https://jadejdoucet.github.io/personalWebpage",
   "dependencies": {
     "gh-pages": "^2.2.0",
+    "node": "^13.10.1",
     "node-sass": "^4.13.0"
   }
 }

@@ -236,17 +236,23 @@ main {
 
 .btn-dark {
   background: black;
-  color: #fff; }
+  color: #fff;
+  border-radius: 5px; }
 
 .btn-light {
   background: #c4c4c4;
-  color: #333; }
+  color: #333;
+  border-radius: 5px; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
   color: #fff;
   height: 60px; }
+
+#adopt {
+  width: 300px;
+  height: 750px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
