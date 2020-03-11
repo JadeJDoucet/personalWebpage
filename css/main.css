@@ -236,17 +236,23 @@ main {
 
 .btn-dark {
   background: black;
-  color: #fff; }
+  color: #fff;
+  border-radius: 5px; }
 
 .btn-light {
   background: #c4c4c4;
-  color: #333; }
+  color: #333;
+  border-radius: 5px; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
   color: #fff;
   height: 60px; }
+
+#adopt {
+  width: 300px;
+  height: 750px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
@@ -374,52 +380,16 @@ main {
     .boxes div:hover {
       padding: 0.1rem 0.7rem; }
   .boxes .text-secondary {
-    font-size: 2rem; }
-  #bg-work {
-    background: url(../img/background-shooting-star.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
-  .projects {
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    max-width: 100%;
-    max-height: 100%; }
-    .projects div {
-      margin-bottom: 3%; }
-    .projects img {
-      max-width: 100%;
-      border: 3px #fff solid; } }
+    font-size: 2rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
-  #bg-work {
-    background: url(../img/background-shooting-star.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
-  .projects {
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    max-width: 100%;
-    max-height: 100%; }
-    .projects div {
-      margin-bottom: 3%; }
-    .projects img {
-      max-width: 100%;
-      border: 3px #fff solid; }
   main .lg-heading {
     font-size: 4rem; }
   main .sm-heading {
     font-size: 1rem; }
   .bio p {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .btn-light {
+    display: none; } }
